@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Color Generator</title>
+    <style>
+        .container{
+            text-align: center;
+            margin-top: 20%;
+            font-size: 30px;
+           
+        }
+        button{
+            padding: 20px 30px;
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+        #start{
+            background-color: green;
+        }
+        #start:hover{
+            background-color: darkgreen;
+        }
+        #stop{
+            background-color: red;
+        }
+        #stop:hover{
+            background-color: darkred;
+        }
+        #reset{
+            background-color: blue;
+        }
+        #reset:hover{
+            background-color: darkblue;
+        }
+        span{
+            padding: 3px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button id="start">START</button>
+      <button id="stop">STOP</button>
+      <button id="reset">RESET</button>
+      <br>
+      <br>
+      <div id="text">
+        Current color's hex code is : <span id="color">#fff</span>
+      </div>
+    </div>
+    <script src="RandomColor.js"></script>
+  </body>
+</html>
